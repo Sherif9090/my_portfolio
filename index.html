@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Freeway | Kuwait Web Specialist</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Consider adding a favicon for branding -->
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo">Freeway</a>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Freeway</h1>
+            <p>Web Solutions for Kuwaiti Businesses</p>
+            <a href="#contact" class="cta-btn">Start Your Project</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- 1. Restaurant -->
+                <div class="project-card" onclick="showDetails('restaurant')">
+                    <img src="restaurant.jpg" alt="Restaurant">
+                    <h3>🍽️ Restaurant Websites</h3>
+                    <p>Arabic/English menus + WhatsApp ordering</p>
+                </div>
+                <!-- 2. Medical Clinic -->
+                <div class="project-card" onclick="showDetails('clinic')">
+                    <img src="clinic.jpg" alt="Clinic">
+                    <h3>🏥 Medical Clinics</h3>
+                    <p>Doctor profiles + appointment booking</p>
+                </div>
+                <!-- 3. Real Estate -->
+                <div class="project-card" onclick="showDetails('realestate')">
+                    <img src="real estate.jpg" alt="Real Estate">
+                    <h3>🏠 Real Estate</h3>
+                    <p>Property listings + KNET payments</p>
+                </div>
+                <!-- 4. Law Firm -->
+                <div class="project-card" onclick="showDetails('lawfirm')">
+                    <img src="law.jpg" alt="Law Firm">
+                    <h3>⚖️ Law Firms</h3>
+                    <p>Bilingual document portals</p>
+                </div>
+                <!-- 5. Auto Repair -->
+                <div class="project-card" onclick="showDetails('autorepair')">
+                    <img src="autoshop.jpg" alt="Auto Repair">
+                    <h3>🔧 Auto Shops</h3>
+                    <p>Service booking + SMS alerts</p>
+                </div>
+                <!-- 6. Others -->
+                <div class="project-card" onclick="showDetails('others')">
+                    <img src="others.png" alt="Others">
+                    <h3>🎯 Other Projects</h3>
+                    <p>Custom web solutions for your business</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get Your Project Started</h2>
+            <form id="contact-form" action="https://formsubmit.co/kuwaitwebdev@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Project Request - Freeway">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="From" value="Freeway Portfolio Website">
+                <input type="hidden" name="Business Owner" value="Sherif Issah">
+                
+                <label>
+                    <span>Service Needed</span>
+                    <select name="Service Type" required>
+                        <option value="">I need a...</option>
+                        <option>Restaurant Website</option>
+                        <option>Clinic Booking System</option>
+                        <option>Real Estate Portal</option>
+                        <option>Law Firm Site</option>
+                        <option>Auto Repair Site</option>
+                        <option>Other Custom Solution</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Your Name</span>
+                    <input type="text" name="Client Name" placeholder="Your Name" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="Client Email" placeholder="Email" required>
+                </label>
+                <label>
+                    <span>Project Details</span>
+                    <textarea name="Project Details" placeholder="Tell us about your project"></textarea>
+                </label>
+                <button type="submit" class="cta-btn">Send Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Freeway. All rights reserved.</p>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
